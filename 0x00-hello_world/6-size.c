@@ -17,6 +17,7 @@ int main(void)
 	long int linttype;
 	long long int llinttype;
 	float ftype;
+
 	printf("Size of a char: %zu byte(s)\n", sizeof(chartype));
 	printf("Size of an int: %zu byte(s)\n", sizeof(inttype));
 	printf("Size of a long int: %zu byte(s)\n", sizeof(linttype));
