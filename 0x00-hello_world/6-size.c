@@ -3,7 +3,7 @@
  * Auth: Ahmed Hassan <ahmedabdelrhman433@gmail.com>
  */
 
-#inclue <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Write a C program that prints the size of various types
@@ -12,7 +12,7 @@
 
 int main(void)
 {
-	char cartype;
+	char chartype;
 	int inttype;
 	long int linttype;
 	long long int llinttype;
@@ -22,5 +22,5 @@ int main(void)
 	printf("Size of a long int: %zu byte(s)\n", sizeof(linttype));
 	printf("Size of a long long int: %zu byte(s)\n", sizeof(llinttype));
 	printf("Size of a float: %zu byte(s)\n", sizeof(ftype));
-	return (0)
+	return (0);
 }
