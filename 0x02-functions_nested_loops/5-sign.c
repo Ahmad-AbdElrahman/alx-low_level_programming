@@ -33,4 +33,5 @@ int print_sign(int n)
 		_putchar(',');
 		_putchar(' ');
 		return (0);
+	}
 }
