@@ -6,8 +6,9 @@
 #include "main.h"
 
 /**
- * int _isalpha(int c) - Write a function that checks for alphabetic character. 
+ * _isalpha(int c) - Write a function that checks for alphabet
  * Return: 0
+ * c : The character to be checked
  */
 
 int _isalpha(int c)
