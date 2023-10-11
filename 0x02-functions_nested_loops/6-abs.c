@@ -6,7 +6,8 @@
 #include "main.h"
 
 /**
- * _abs(int) - Write a function that checks for alphabet
+ * _abs - Write a function that checks for alphabet
+ * @n: The number to be computed.
  * Return: 0
  */
 
