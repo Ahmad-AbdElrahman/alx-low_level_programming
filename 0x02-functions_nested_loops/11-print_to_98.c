@@ -4,12 +4,12 @@
  */
 
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - function that prints all natural numbers from n to 98
  * followed by a new line
- * @i: The first number to be added
- * @k: The first number to be added
+ * @n: The first number
  * Return: 0
  */
 
