@@ -7,6 +7,7 @@
 
 /**
  * _islower - Prints function that prints the lower alphabet
+ * @c: The character to be checked
  * Return: 0
  */
 
