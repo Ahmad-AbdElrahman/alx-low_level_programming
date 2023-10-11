@@ -6,13 +6,13 @@
 #include "main.h"
 
 /**
- * main - Prints function that prints the alphabet
+ * print_alphabet - Prints function that prints the alphabet
  * Return: 0
  */
 
 void print_alphabet(void)
 {
-	int i;
+	char i;
 
 	for (i = 'a' ; i < 'z' ; i++)
 	{
