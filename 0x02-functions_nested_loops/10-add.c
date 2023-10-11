@@ -7,6 +7,8 @@
 
 /**
  * add - Write a function that adds two integers and returns the result
+ * @i: The first number to be added
+ * @k: The first number to be added
  * Return: 0
  */
 
