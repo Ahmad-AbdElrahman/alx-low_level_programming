@@ -7,6 +7,7 @@
 
 /**
  * print_line - Write a function that draws a straight line in the terminal
+ * @n: line length
  * Return: Draw straight line
  */
 void print_line(int n)
