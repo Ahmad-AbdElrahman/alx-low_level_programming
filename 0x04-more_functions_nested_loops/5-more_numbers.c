@@ -10,7 +10,7 @@
  * Return: 10 times the number
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i, k;
 
