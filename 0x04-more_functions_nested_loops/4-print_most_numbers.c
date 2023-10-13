@@ -7,9 +7,7 @@
 
 /**
  * print_most_numbers - Write a function that prints the numbers, from 0 to 9
- * @a: the first number
- * @b: the second number
- * Return: The result of multiplication between a and b
+ * Return: numbers from 0 to 9 except 2 and 4
  */
 
 void print_most_numbers(void)
@@ -18,7 +16,11 @@ void print_most_numbers(void)
 
 	for (i = 0 ; i < 10 ; i++)
 	{
-		if (i != 2 || i != 4)
+		if (i == 2 || i == 4)
+		{
+			continue;
+		}
+		else
 		{
 			_putchar(i + '0');
 		}
