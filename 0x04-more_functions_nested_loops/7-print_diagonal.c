@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * print_line - Write a function that draws a diagonal line on the terminal
+ * print_diagonal - Write a function that draws a diagonal line on the terminal
  * @n: line length
  * Return: Draw diagonal line
  */
