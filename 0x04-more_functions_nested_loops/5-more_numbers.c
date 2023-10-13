@@ -9,23 +9,21 @@
  * more_numbers - Write a function that prints 10 times the numbers
  * Return: 10 times the number
  */
-
 void more_numbers(void)
 {
-	int i, k;
+	int x, y;
 
-	for (i = 0; i <= 10; i++)
+	for (x = 0; x < 10; x++)
 	{
-		for (k = 0; k <= 14; k++)
+		for (y = 0; y <= 14; y++)
 		{
-			if (k > 9)
+			if (y > 9)
 			{
-				_putchar((k / 10) + '0');
+				_putchar((y / 10) + '0');
 			}
 
-			_putchar((k % 10) + '0');
+			_putchar((y % 10) + '0');
 		}
-
 
 		_putchar('\n');
 	}
