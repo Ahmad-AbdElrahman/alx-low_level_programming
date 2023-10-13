@@ -18,8 +18,12 @@ void print_most_numbers(void)
 	{
 		for (k = 0; k <= 14; k++)
 		{
-			_putchar(k + '0');
-			_putchar('\n');
+			if (k > 9)
+			{
+				_putchar((k / 10) + '0');
+			}
+
+			_putchar((k % 10) + '0');
 		}
 	}
 		_putchar('\n');
