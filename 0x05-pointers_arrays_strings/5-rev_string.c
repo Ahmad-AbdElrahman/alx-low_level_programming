@@ -12,17 +12,26 @@
  */
 void rev_string(char *s)
 {
-	int c = 0;
+	int i, c, k;
+	char *a, w;
+
+	a = s;
 
 	while (s[c] != '\0')
 	{
 		c++;
 	}
 
-	for (c -= 1; c >= 0; c--)
+	for (k = 1; k < c; k++)
 	{
-		_putchar(s[c]);
+		a++;
 	}
 
-	_putchar('\n');
+	for (i = 0; i < (c / 2); i++)
+	{
+		w = s[i];
+		s[i] = *a;
+		*a = w;
+		a--;
+	}
 }
