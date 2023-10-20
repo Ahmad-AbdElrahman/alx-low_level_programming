@@ -1,8 +1,3 @@
-/*
- * File: 0-strcat.c
- * Auth: Ahmed Hassan <ahmedabdelrhman433@gmail.com>
- */
-
 #include "main.h"
 #include <stdio.h>
 
