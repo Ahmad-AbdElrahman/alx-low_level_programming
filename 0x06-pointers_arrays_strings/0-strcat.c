@@ -6,10 +6,10 @@
 #include "main.h"
 
 /**
- * _strcat - Prints Write a function that multiplies two integers
+ * _strcat - appending two integers
  * @dest: the dest string
  * @src: the source string
- * Return: The result of multiplication between a and b
+ * Return: The string
  */
 char *_strcat(char *dest, char *src)
 {
