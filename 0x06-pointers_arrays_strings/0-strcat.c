@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * *_strcat - Prints Write a function that multiplies two integers
+ * _strcat - Prints Write a function that multiplies two integers
  * @dest: the dest string
  * @src: the source string
  * Return: The result of multiplication between a and b
