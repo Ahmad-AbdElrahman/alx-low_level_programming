@@ -3,14 +3,16 @@
  * Auth: Ahmed Hassan <ahmedabdelrhman433@gmail.com>
  */
 
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
 
 /**
- * _strcat - appending two integers
- * @dest: the dest string
- * @src: the source string
- * Return: The string
- */
+  * _strcat - Concatenates two strings
+  * @dest: The destination string
+  * @src: The source string
+  *
+  * Return: A pointer to the resulting string dest
+  */
 char *_strcat(char *dest, char *src)
 {
 	int dlen = 0, i;
