@@ -1,35 +1,22 @@
 #include "main.h"
 
 /**
-  * _strstr - locate a substring
-  * @haystack: the string to search
-  * @needle: the string to find
+  * print_chessboard - Print the chessboard
+  * @a: array of pieces
   *
-  * Return: char value
+  * Return: Nothing.
   */
-char *_strstr(char *haystack, char *needle)
+void print_chessboard(char (*a)[8])
 {
-	int a = 0, b = 0;
+	int b, c;
 
-	while (haystack[a])
+	for (b = 0; b < 8; b++)
 	{
-		while (needle[b])
+		for (c = 0; c < 8; c++)
 		{
-			if (haystack[a + b] != needle[b])
-			{
-				break;
-			}
-
-			b++;
+			_putchar(a[b][c]);
 		}
 
-		if (needle[b] == '\0')
-		{
-			return (haystack + a);
-		}
-
-		a++;
+		_putchar('\n');
 	}
-
-	return ('\0');
 }
