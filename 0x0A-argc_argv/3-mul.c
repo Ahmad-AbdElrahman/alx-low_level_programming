@@ -23,5 +23,6 @@ int main(int argc, char *argv[])
 		k = atoi(argv[2]);
 		printf("%d\n", i * k);
 	}
+
 	return (0);
 }
