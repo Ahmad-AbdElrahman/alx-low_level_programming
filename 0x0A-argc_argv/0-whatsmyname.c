@@ -4,6 +4,13 @@
  */
 
 #include <stdio.h>
+
+/**
+ * main - Prints function name
+ * @argc: number of args
+ * @argv: args
+ * Return: zero
+ */
 int main(int argc, char *argv[])
 {
 	argc = argc;
