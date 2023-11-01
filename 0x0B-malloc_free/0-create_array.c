@@ -4,6 +4,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * create_array - Prints Write a function that multiplies two integers
  * @size: array size
