@@ -1,34 +1,25 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
- * print_listint - prints the list
- * @h: header
- *
- * Return: nothing
- * 
- */
+  * print_listint - Prints all the elements of a linked list
+  * @h: The head of the linked list
+  *
+  * Return: The number of nodes of the linked list
+  */
 size_t print_listint(const listint_t *h)
 {
-    struct listint_s *new_node;
-    int count = 0;
+	int count = 0;
 
-    new_node = malloc(sizeof(listint_t));
-    *new_node = *h;
-    if(h == NULL)
-    {
-        printf("list is empty");
-    }
-    else
-    {
-        while(new_node != NULL)
-        {
-            printf("%d\n", new_node->n);
-            new_node = new_node->next;
-            count++;
-        }
-    }
-    return (count);
+	if (h != NULL)
+	{
+		while (h)
+		{
+			printf("%d\n", h->n);
+			h = h->next;
+			count++;
+		}
+	}
+
+	return (count);
 }
