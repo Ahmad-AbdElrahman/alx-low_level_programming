@@ -10,7 +10,6 @@
  * Return: nothing
  * 
  */
-
 size_t print_listint(const listint_t *h)
 {
     struct listint_s *new_node;
@@ -18,11 +17,18 @@ size_t print_listint(const listint_t *h)
 
     new_node = malloc(sizeof(listint_t));
     *new_node = *h;
-    while(new_node != NULL)
+    if(h == NULL)
     {
-        printf("%d\n", new_node->n);
-        new_node = new_node->next;
-        count++;
+        printf("list is empty");
+    }
+    else
+    {
+        while(new_node != NULL)
+        {
+            printf("%d\n", new_node->n);
+            new_node = new_node->next;
+            count++;
+        }
     }
     return (count);
 }
