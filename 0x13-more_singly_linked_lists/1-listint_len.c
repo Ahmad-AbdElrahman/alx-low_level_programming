@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
   * listint_len - length of list
@@ -13,7 +14,7 @@
     listint_t *new_node;
 
     new_node = malloc(sizeof(listint_t));
-    new_node = h;
+    *new_node = *h;
     while(new_node)
     {
         new_node = new_node->next;
