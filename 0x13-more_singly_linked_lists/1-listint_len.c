@@ -1,25 +1,24 @@
 #include <stdio.h>
 #include "lists.h"
-#include <stdlib.h>
 
 /**
-  * listint_len - length of list
+  * listint_len - Counts the elements in a linked list
   * @h: The head of the linked list
   *
-  * Return: length of list
+  * Return: The number of elements in a linked list
   */
- size_t listint_len(const listint_t *h)
- {
-    int count = 0;
-    listint_t *new_node;
+size_t listint_len(const listint_t *h)
+{
+	int count = 0;
 
-    new_node = malloc(sizeof(listint_t));
-    *new_node = *h;
-    while(new_node)
-    {
-        new_node = new_node->next;
-        count++;
-    }
+	if (h != NULL)
+	{
+		while (h)
+		{
+			h = h->next;
+			count++;
+		}
+	}
 
-    return (count);
- }
+	return (count);
+}
