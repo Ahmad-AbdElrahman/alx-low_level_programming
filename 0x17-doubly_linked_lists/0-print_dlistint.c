@@ -3,22 +3,21 @@
 #include "lists.h"
 
 /**
- * print_dlistint - print doubly linked list
- * @h: pointer to struct
- * Return: the number of nodes
+ * print_dlistint - Prints all the elements of a double linked list
+ * @h: The double linked list to prints
+ *
+ * Return: The number of nodes of the double linked list
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	const dlistint_t *current;
-	int n = 0;
-	
-	current = h;
-	while (current != NULL)
+	int length = 0;
+
+	while (h != NULL)
 	{
-		printf("%i\n", current->n);
-		current = current->next;
-		n++;
+		printf("%d\n", h->n);
+		++length;
+		h = h->next;
 	}
 
-	return (n);
+	return (length);
 }
