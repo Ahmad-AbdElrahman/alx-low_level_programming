@@ -4,16 +4,16 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - check the code
+ * add_dnodeint_end - add node at end
  * @head: pointer to struct
  * @n: data to node
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: new node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *current;
-	dlistint_t *new;
+	dlistint_t *current = NULL;
+	dlistint_t *new = NULL;
 
 	new = malloc(sizeof(dlistint_t));
 	if (!new)
